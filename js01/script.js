@@ -108,3 +108,40 @@ console.log("Canciones hechas en el año 2021 ", cancionesPP[4]["2021"] );
 
 console.log("Num total de elementos: ", cancionesPP.length);
 console.log("Contiene la canción AMG: ", cancionesPP.indexOf("AMG")>-1 );
+
+//-------------------------
+// Conversión de datos
+const myNumber = 420;  //Minutos de la sesión js01
+console.log("Num. minutos de la sesión: " + myNumber);
+// toString
+const myNumberTxt = String(myNumber);
+console.log("Num. minutos de la sesión: " + myNumberTxt);
+
+// toNumber
+const myString = "420";
+const sumatoria = 80 + Number(myString);
+console.log("Valor de sumatoria: " + sumatoria);
+
+//toParseInt
+const myStringInteger = "420 2020";
+const sumatoriaEntera = 80 + parseInt(myStringInteger);
+console.log("Valor de sumatoria entera: " + sumatoriaEntera );
+
+//toBooleas
+const isBelicoso = "false";
+console.log( typeof isBelicoso);
+console.log( Boolean(isBelicoso));
+
+if( isBelicoso === "false" )
+   console.log("Denle su belikin");
+else
+   console.log("Abra paso a la barredora");
+
+// Boolean
+// para que sea False, debe ser: "", 0, null, undefined
+// Number
+//[] = 0, [30] = 30, [3,1] = NaN, false = 0, true=1
+//String
+//[]= "", [1,2]= "1,2", function(){} = function(){}, {} = [object Object]
+
+
